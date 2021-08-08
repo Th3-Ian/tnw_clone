@@ -57,10 +57,18 @@ h5 {
 }
 
 .primary-nav a {
+  color: #505666;
   font-size: 14px;
   padding: 16px;
   font-weight: 300;
   letter-spacing: 0.2px;
+  line-height: 45px;
+}
+
+.primary-nav a:hover {
+  transition: background-color 0.3s ease;
+  background-color: white;
+  color: black;
 }
 
 .dropdown {
