@@ -564,3 +564,26 @@ ol li::marker {
   background-color: #00cccc;
   cursor: pointer;
 }
+
+/* PARTNERS SECTION */
+
+.partners-sect {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  padding: 48px;
+  margin: 0 auto;
+}
+
+.partners-sect img {
+  width: 137px;
+  height: 77px;
+  opacity: 60%;
+}
+
+.partners-sect img:hover {
+  opacity: 90%;
+}
