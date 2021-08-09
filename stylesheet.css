@@ -75,6 +75,12 @@ button {
 .gray-bg {
   background-color: #f7f8f8;
 }
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
 /* HEADER */
 
 .top-header {
@@ -418,4 +424,92 @@ ol li::marker {
   position: absolute;
   left: 25%;
   bottom: 65%;
+}
+
+/* NEWSLETTER SUB */
+
+.newsletter-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://next.tnwcdn.com/assets/next/img/spacesbg.png);
+  background-size: 120%;
+  background-attachment: fixed;
+  background-position: 50%;
+  color: white;
+  padding: 4em;
+  box-sizing: border-box;
+  height: 272px;
+  width: 100%;
+  margin-bottom: 120px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.newsletter-form h3 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form p {
+  font-family: 200;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form a {
+  color: #00c3c5;
+}
+
+.newsletter-form a:hover {
+  color: white;
+  font-weight: 500;
+}
+
+.newsletter-container ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.white-icon {
+  opacity: 75%;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  border-radius: 0.25rem;
+  padding: 10px 25px;
+  width: 721px;
+  height: 30px;
+}
+
+.news-input {
+  width: 70%;
+  border: none;
+  font-size: 16px;
+  margin: 15px;
+}
+
+.news-submit {
+  border: none;
+  background-color: white;
+  font-size: 16px;
+  margin-left: 72px;
+}
+
+/* WORK WITH US */
+
+.wwu-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
