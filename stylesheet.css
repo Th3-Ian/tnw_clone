@@ -57,6 +57,24 @@ button {
   border: 1px solid rgba(80, 86, 102, 1);
 }
 
+.head-container {
+  height: 100px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 0;
+  background: white;
+}
+
+.head-container h2 {
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+}
+
+.gray-bg {
+  background-color: #f7f8f8;
+}
 /* HEADER */
 
 .top-header {
@@ -311,21 +329,6 @@ ol li::marker {
 
 /* LATEST STORIES */
 
-.latest-header {
-  height: 100px;
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 32px 0;
-  background: white;
-}
-
-.latest-header h2 {
-  color: rgb(0, 0, 0);
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-top: 1rem;
-}
-
 .stories-grid {
   display: grid;
   grid-template-columns: repeat(4, 270px);
@@ -371,4 +374,48 @@ ol li::marker {
 
 .news-btn button:hover {
   opacity: 100%;
+}
+
+/* CHANNELS */
+
+.channel-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  box-sizing: border-box;
+  padding: 0;
+  max-width: 1280px;
+  overflow: hidden;
+  margin: auto;
+  grid-gap: 10px;
+}
+
+.channel {
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.channel header {
+  bottom: 20%;
+  left: 0;
+  margin: 5px;
+  text-align: center;
+}
+
+.bg-img {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.channel h6 {
+  font-size: 16px;
+  font-color: white;
+}
+
+.channel-logo {
+  width: 120px;
+  position: absolute;
+  left: 25%;
+  bottom: 65%;
 }
