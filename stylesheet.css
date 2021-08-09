@@ -393,6 +393,7 @@ ol li::marker {
   overflow: hidden;
   margin: auto;
   grid-gap: 10px;
+  padding-bottom: 48px;
 }
 
 .channel {
@@ -471,7 +472,7 @@ ol li::marker {
   font-weight: 500;
 }
 
-.newsletter-container ul {
+.social-icon-container {
   display: flex;
   flex-direction: row;
   list-style: none;
@@ -586,4 +587,63 @@ ol li::marker {
 
 .partners-sect img:hover {
   opacity: 90%;
+}
+
+/* FOOTER */
+
+footer {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  background-color: black;
+  color: white;
+  padding: 32px;
+  margin: 0 auto;
+}
+
+.footer-head h2 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.footer-pillar {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-pillar h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.footer-pillar a {
+  font-weight: 200;
+  color: #00c3c5;
+  margin-bottom: 8px;
+}
+
+.footer-pillar a:hover {
+  font-weight: 600;
+  color: white;
+}
+
+.copyright-notice {
+  padding: 20px 0;
+  height: 48px;
+  text-align: center;
+  background-color: black;
+  border-top: 2px solid gray;
+  color: rgb(197, 197, 197);
+}
+
+.copyright-notice p {
+  font-style: 10px;
+}
+
+/* RESPONSIVE LEVEL 1 */
+
+@media (max-device-width: 1020px) {
+  .spacer {
+    display: none;
+  }
 }
