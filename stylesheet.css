@@ -512,4 +512,55 @@ ol li::marker {
 .wwu-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  padding: 0 32px;
+  margin: 0 auto;
+  max-width: 80rem;
+  grid-gap: 20px;
+}
+
+.wwu-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.wwu-left h6 {
+  color: black;
+}
+
+.wwu-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.wwu-right img {
+  width: 112px;
+  height: 112px;
+}
+
+.pillar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pillar-container p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.wwu-item {
+  margin-bottom: 20px;
+}
+
+.blue-btn {
+  padding: 0 24px;
+  height: 48px;
+  width: 146px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  background-color: #00cccc;
+  cursor: pointer;
 }
