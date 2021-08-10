@@ -335,6 +335,11 @@ ol li::marker {
 
 /* LATEST STORIES */
 
+.latest-stories-wrapper {
+  padding: 0 32px;
+  margin: 0 auto;
+}
+
 .stories-grid {
   display: grid;
   grid-template-columns: repeat(4, 270px);
@@ -748,5 +753,84 @@ footer {
   .partners-sect img {
     width: 248px;
     height: 140px;
+  }
+}
+
+/* RESPONSIVE LEVEL 2 */
+
+@media (max-device-width: 770px) {
+  /* LATEST STORIES */
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .story a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .story img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    background-position: 50% 50%;
+    object-position: 50% 50%;
+    margin-right: 20px;
+  }
+
+  .story h4 {
+    font-weight: 600;
+  }
+
+  .newsletter-form h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .newsletter-form p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .input-container {
+    width: 85%;
+  }
+  .news-input {
+    width: 70%;
+  }
+
+  .wwu-container {
+    grid-template-columns: 1fr;
+  }
+
+  .wwu-left {
+    align-items: center;
+  }
+
+  .wwu-left h6 {
+    margin-bottom: 0.5rem;
+  }
+
+  .wwu-left h4 {
+    font-size: 1.75rem;
+  }
+
+  footer {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-head {
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+  }
+
+  .footer-pillar h3 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .copyright-notice p {
+    font-size: 11px;
   }
 }
